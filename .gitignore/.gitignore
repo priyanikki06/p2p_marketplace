@@ -1,0 +1,5 @@
+.idea/*
+*.phyc
+*.pyo
+migration/*
+sesstings.py
