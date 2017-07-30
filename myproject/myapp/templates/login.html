@@ -1,0 +1,66 @@
+<!DOCtype html>
+<html>
+	<head>
+		<title>login</title>
+			<style>
+				body
+					{
+					   color:red
+						}
+			</style>
+		<meta charset="utf-8">
+    		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--Bootstrap-->
+		<link href="css/bootstrap.css" rel="stylesheet">
+	</head>
+
+
+
+
+	<body background="https://www.windowscentral.com/sites/wpcentral.com/files/styles/larger/public/field/image/2014/02/Nokia_XL_0.jpg?itok=xETm8WdB">
+
+
+	     <td colspan=2><center><font size=4><b>
+         <div class="background-image"></div>
+         <div class="content">
+         </div>
+
+		<div>
+			<h1>INSTAGRAM CLONE</h1>
+			<h3>LOGIN</h3>
+			<form method="post">
+				{% csrf_token %}
+
+
+				<div>
+                <label for="username" >Username: </label>
+                <input id="username" type="text" name="username" placeholder="username" value="{{ username }}">
+            </div>
+
+
+            <div>
+                <label for="password">Password: </label>
+                <input id="password" type="password" name="password" placeholder="password" value="{{ password }}">
+            </div>
+
+
+			<div>
+                <input type="submit" value="Login"  >
+
+				</div>
+			</form>
+
+		</div>
+
+			 <br><br>
+
+		<!--Javascript files-->
+		<!--Jquery library-->
+		<script src="js/jquery-3.2.1.js"></script>
+		<!--Bootstrap js Library-->
+		<script src="js/bootstrap.js"></script>
+			 </b></font></center></td>
+	</body>
+</html>

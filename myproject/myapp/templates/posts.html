@@ -1,0 +1,34 @@
+<!---{ % load static % }
+<link href="{% static "css/bootstrap.css" rel="stylesheets">
+
+<form method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      <input type="submit" class="btn btn-default" value="Add a picture">
+   </form>   -->
+
+
+{ % load staticfiles % }
+<!Doctype html>
+ <html>
+    <head>
+       <title>Sign Up</title>
+
+      <meta charset="utf-8">
+           <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+
+       <!--Bootstrap-->
+       <link href="{ static "css/bootstrap.css"}" rel="stylesheet">
+    </head>
+    <body>
+ 	   <form action="" method ="POST" enctype="multipart/form-data"><br><br>
+ 		   {% csrf_token %}
+ 		   image:-
+ 		   <input type="file"class="btn btn-default" name="image" value="{{ image }}"><br><br>
+ 		   <input type="text" name="caption" value="{{ caption }}"><br><br>
+ 	       <input type="submit"class="btn btn-default" name="add a picture" value = "POST">
+
+     </form>
+
+ </body>
+ </html>
